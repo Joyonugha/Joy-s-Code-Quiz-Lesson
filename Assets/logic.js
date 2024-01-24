@@ -95,7 +95,7 @@ var questionsContainer = document.querySelector("#questions");
 
  // Added Event listeners
  startButton.addEventListener("click", startQuiz);
- submitButton.addEventListener("click", function () {
+ submit.addEventListener("click", function () {
    // Handle saving initials and score
    var initials = initialsInput.value.trim();
    if (initials !== "") {
