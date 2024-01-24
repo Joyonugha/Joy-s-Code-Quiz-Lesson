@@ -28,7 +28,7 @@ const questions = [
   // Shuffle function to randomize the order of questions (Ref link: https://medium.com/@khaledhassan45/how-to-shuffle-an-array-in-javascript-6ca30d53f772)
   function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
+      let j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
