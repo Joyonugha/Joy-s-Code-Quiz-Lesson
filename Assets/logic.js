@@ -6,7 +6,7 @@ var choices = document.querySelector("#choices");
 var endScreen = document.querySelector("#end-screen");
 var initialsInput = document.querySelector("#initials");
 var submit = document.querySelector("#submit");
-var submit = document.querySelector("#feedback");
+var submitButton = document.querySelector("#feedback");
 var timerSpan = document.querySelector("#time");
 var questionsContainer = document.querySelector("#questions");
 // function hideIntro(){
@@ -55,8 +55,9 @@ var questionsContainer = document.querySelector("#questions");
 
  // Function to check the answer selected by the user
  function checkAnswer(selectedChoice) {
-   var currentQuestion = question[currentQuestionIndex];
+   var currentQuestion = questions[currentQuestionIndex];
    console.log("checking answer");
+   console.log(currentQuestion);
    if (selectedChoice === currentQuestion.answer) {
      // Correct answer
      feedback.textContent = "Correct!";
@@ -95,7 +96,7 @@ var questionsContainer = document.querySelector("#questions");
 
  // Added Event listeners
  startButton.addEventListener("click", startQuiz);
- submit.addEventListener("click", function () {
+ submitButton.addEventListener("click", function () {
    // Handle saving initials and score
    var initials = initialsInput.value.trim();
    if (initials !== "") {

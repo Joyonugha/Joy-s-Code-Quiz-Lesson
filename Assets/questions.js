@@ -1,4 +1,4 @@
-const questions = [
+let questions = [
     {
       title: "What is the purpose of the 'let' keyword in JavaScript?",
       choices: ["To declare a constant variable", "To declare a variable with block scope", "To declare a global variable", "To declare a function"],
@@ -7,12 +7,12 @@ const questions = [
     {
       title: "What does the '===' operator check in JavaScript?",
       choices: ["Value and type equality", "Value equality", "Type equality", "None of the above"],
-      correctAnswer: 0
+      answer: 0
     },
     {
       title: "Which of the following is not a primitive data type in JavaScript?",
       choices: ["string", "number", "boolean", "object"],
-      correctAnswer: 3
+      answer: 3
     },
     {
       title: "What is the purpose of the 'return' statement in a JavaScript function?",
